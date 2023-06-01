@@ -7,7 +7,7 @@ const Loader = () => {
                 height="120"
                 width="120"
                 radius="48"
-                color="#2563EB"
+                color="#352b1e"
                 ariaLabel="watch-loading"
                 wrapperStyle={{}}
                 wrapperClassName=""
