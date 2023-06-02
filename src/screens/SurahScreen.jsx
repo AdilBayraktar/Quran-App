@@ -20,7 +20,7 @@ const SurahScreen = () => {
         })
     }, [])
 
-    console.log(surah)
+    // console.log(surah)
 
     return (
         <div className="flex justify-center">

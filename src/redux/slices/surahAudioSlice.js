@@ -4,8 +4,8 @@ import axios from "axios";
 export const getSurahAudio = createAsyncThunk(
   "getSurahAudio",
   async (recitationId, surah) => {
-    console.log("1", surah);
-    console.log("2", recitationId);
+    // console.log("1", surah);
+    // console.log("2", recitationId);
     return await axios.get(
       `https://api.quran.com/api/v4/chapter_recitations/${recitationId}/${surah}`
     );

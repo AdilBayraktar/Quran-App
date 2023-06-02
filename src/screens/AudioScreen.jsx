@@ -29,8 +29,8 @@ const AudioScreen = () => {
             top: 0
         })
     }, [])
-    console.log(surahName)
-    console.log(surahs)
+    // console.log(surahName)
+    // console.log(surahs)
     return (
         <div>
             {

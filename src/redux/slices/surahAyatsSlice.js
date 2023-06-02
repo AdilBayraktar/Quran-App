@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const getSurahAyats = createAsyncThunk("getSurahAyats", async (id) => {
-  return await axios.get(`http://api.alquran.cloud/v1/surah/${id}/ar.alafasy`);
+  return await axios.get(`http://api.alquran.cloud/v1/surah/${id}`);
 });
 
 const surahAyatsSlice = createSlice({
