@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Container from './Layouts/Container'
 import SurahScreen from './screens/SurahScreen'
 import AudioScreen from './screens/AudioScreen'
+import AudioListScreen from './screens/AudioListScreen'
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
         <Routes>
           <Route path='/' element={< HomeScreen />} />
           <Route path='surah/:id' element={< SurahScreen />} />
-          <Route path='surah-audio/:id' element={< AudioScreen />} />
+          <Route path='audio-list/:surahId' element={< AudioListScreen />} />
+          <Route path='surah-audio/:recitationId/:surahId' element={<AudioScreen />} />
         </Routes>
       </Container>
       <Footer />

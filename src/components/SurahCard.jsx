@@ -16,7 +16,7 @@ const SurahCard = ({ surah }) => {
             </div>
             <div className="flex mt-5">
                 <Link to={`/surah/${surah?.number}`} className='bg-gray-600 w-1/2 m-1 rounded-2xl hover:bg-gray-400 transition text-white px-2 py-1'>إقرأ</Link>
-                <Link to={`/surah-audio/${surah?.number}`} className='bg-gray-600 w-1/2 m-1 rounded-2xl hover:bg-gray-400 transition  text-white px-2 py-1'>استمع</Link>
+                <Link to={`/audio-list/${surah?.number}`} className='bg-gray-600 w-1/2 m-1 rounded-2xl hover:bg-gray-400 transition  text-white px-2 py-1'>استمع</Link>
             </div>
         </div>
     )

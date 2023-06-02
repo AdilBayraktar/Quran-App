@@ -10,8 +10,13 @@ const HomeScreen = () => {
     const surahs = useSelector(state => state.getSurahsInfo)
     useEffect(() => {
         dispatch(getSurahsInfo())
+        window.scrollTo({
+            behavior: 'smooth',
+            left: 0,
+            top: 0
+        })
     }, [dispatch])
-    console.log(surahs)
+    // console.log(surahs)
     return (
         <div>
             {
